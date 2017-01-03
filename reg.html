@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>注册页面</title>
+    <style type="text/css" media="screen">
+    /*
+    @ 测试哦
+    的啊
+     */
+        body,ul,li{
+            list-style-type:none;
+            margin:0;
+            padding:0;
+        }
+        #reg{
+            width:400px;
+            height:auto;
+            border:1px solid black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -200px;
+            margin-top: -200px;
+
+        }
+        .else{
+            position: relative;
+            width: 400px;
+            height: 400px;
+        }
+        h1{
+            display:block;
+            background-color:#CCC;
+            font-family: "黑体";
+            margin-top:0;
+            padding-left: 18px;
+            height:60px;
+            line-height:60px;
+        }
+        lable{
+            text-align:right;
+            width:100px;
+            display:inline-block;
+            font-size:16px;
+            vertical-align: middle; /*表格与table对齐*/
+            font-family:"微软雅黑";
+        }
+        li{
+            margin-top: 15px;
+        }
+        #text input{
+            width: 200px;
+            height: 20px;
+            border: 1px solid gray;
+            border-radius: 3px;
+        }
+        .Code{
+            width: 80px;
+            height: 20px;
+            border: 1px solid gray;
+            border-radius: 3px;
+        }
+        button{
+            width: 113px;
+            height: 35px;
+            font-family:"黑体";
+            font-size: 18px;
+        }
+        .button{
+            text-align: center;
+            margin-top: 20px;
+        }
+        .button-1{
+            background:url(images/login_reg_icon.png) no-repeat 0 0;
+            border: none;
+        }
+        .button-1:hover{
+            background:url(images/login_reg_icon.png) no-repeat 0 -50px;
+            border: none;
+        }
+        .button-2{
+            background:url(images/login_reg_icon.png) no-repeat 0 -100px;
+            border: none;
+        }
+        .button-2:hover{
+            background:url(images/login_reg_icon.png) no-repeat 0 -150px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+<div id="reg">
+    <div class="else">
+        <h1>新用户注册</h1>
+        <ul>
+            <div id="text">
+                <li><lable>用户名：</lable> <input type="text"></li>
+                <li><lable>真实姓名：</lable> <input type="text"></li>
+                <li><lable>登录密码：</lable> <input type="text"></li>
+                <li><lable>确认密码：</lable> <input type="text"></li>
+                <li><lable>电子邮箱：</lable> <input type="text"></li>
+            </div>
+            <li>
+                <lable>性别：</lable> 
+                <input type="radio" name="sexs" checked="checked">男
+                <input type="radio" name="sexs">女
+
+            </li>
+            <li>
+                <lable>验证码：</lable> 
+                <input type="text" class="Code"/>
+                <a href="#" style="font-size: 14px">看不清，点此刷新</a>
+            </li>
+            <li class="button">
+                <button class="button-1">确定注册</button>
+                <button class="button-2">已有账号？</button>
+            </li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>

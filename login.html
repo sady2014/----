@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>登陆页面</title>
+	<style type="text/css">
+	*{
+		margin: 0;padding: 0;background: #F9F9F9;
+	}
+	ul{
+		width: 400px; 
+		height: 300px;
+		position: absolute;
+		margin-left: -200px;
+		margin-top:-150px; 
+		top: 50%;
+		left: 50%;
+		border: 1px solid red;
+		list-style: none;
+	}
+	h2{
+		background: #F6F6F6;
+		height: 60px; 
+		line-height: 60px;
+		padding-left: 30px; 
+	}
+	li{
+		margin-top: 15px;
+	}
+	label{
+		width: 100px; 
+		height: 30px; 
+		line-height: 30px;
+		font-size: 18px;
+		display: inline-block;
+		text-align:right;
+		vertical-align: middle;
+	}
+	input{
+		height: 25px;
+		width: 250px;
+		border: 1px solid #DDDDDD;
+		margin-top: 4px;
+		font-size: 16px ;
+		border-radius:3px;
+	}
+    button{
+        width: 113px;
+        height: 35px;
+        font-family:"黑体";
+        font-size: 18px;
+        margin-top: 25px;
+    }
+    .button{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .button-1{
+        background:url(images/login_reg_icon.png) no-repeat 0 0;
+        border: none;
+    }
+    .button-1:hover{
+        background:url(images/login_reg_icon.png) no-repeat 0 -50px;
+        border: none;
+    }
+    .button-2{
+        background:url(images/login_reg_icon.png) no-repeat 0 -100px;
+        border: none;
+    }
+    .button-2:hover{
+        background:url(images/login_reg_icon.png) no-repeat 0 -150px;
+        border: none;
+    }
+	</style>
+</head>
+<body>
+	<div id="content">
+		<ul>
+			<h2>用户登录:</h2>
+		    <li><label>用户名：</label><input type="text" name=""></li>
+		    <li><label>密码：</label><input type="password" name=""></li>
+		     <li class="button">
+                <button class="button-1">确定注册</button>
+                <button class="button-2">已有账号？</button>
+            </li>
+		</ul>
+	</div>
+</body>
+</html>
